@@ -1,0 +1,310 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+.home-section {
+  background: url("background.jpg") no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #007bff;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #0056b3;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.filters {
+  margin-bottom: 10px;
+}
+
+.filters button {
+  width: auto;
+  margin: 5px;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: background-color 0.3s;
+}
+
+li:nth-child(even) {
+  background: #ececec;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.remove,
+.edit,
+.complete {
+  color: white;
+  background: #dc3545;
+  border: none;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove:hover,
+.edit:hover,
+.complete:hover {
+  background: #c82333;
+}
+
+.edit {
+  background: #007bff;
+}
+
+.edit:hover {
+  background: #0056b3;
+}
+
+.complete {
+  background: #ffc107;
+}
+
+.complete:hover {
+  background: #e0a800;
+}
+
+li.high-priority {
+  border-left: 5px solid red;
+}
+
+li.medium-priority {
+  border-left: 5px solid orange;
+}
+
+li.low-priority {
+  border-left: 5px solid green;
+}
+
+#progress-container {
+  margin-top: 20px;
+}
+
+.features-section {
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.features-section h2 {
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature i {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  margin: 10px 0;
+}
+
+.about-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+footer {
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .feature-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 80%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}

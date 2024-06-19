@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProTask Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>ProTask Manager</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="home-section">
+      <div class="hero">
+        <h2>Your Ultimate Task Management Solution</h2>
+        <p>
+          Manage your tasks efficiently and effectively with ProTask Manager.
+        </p>
+        <button onclick="scrollToSection('task-section')">Get Started</button>
+      </div>
+    </section>
+    <main id="task-section">
+      <div class="container">
+        <h2>Add New Task</h2>
+        <input type="text" id="new-task" placeholder="Add a new task..." />
+        <select id="priority">
+          <option value="high">High Priority</option>
+          <option value="medium">Medium Priority</option>
+          <option value="low">Low Priority</option>
+        </select>
+        <button onclick="addTask()">Add</button>
+        <h2>Tasks</h2>
+        <div class="filters">
+          <button onclick="filterTasks('all')">All</button>
+          <button onclick="filterTasks('completed')">Completed</button>
+          <button onclick="filterTasks('pending')">Pending</button>
+          <button onclick="sortTasks()">Sort by Priority</button>
+        </div>
+        <ul id="task-list"></ul>
+        <div id="progress-container">
+          <label>Progress:</label>
+          <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+      </div>
+    </main>
+    <section id="features" class="features-section">
+      <h2>Features</h2>
+      <div class="feature-list">
+        <div class="feature">
+          <i class="fas fa-tasks"></i>
+          <h3>Task Management</h3>
+          <p>Organize and prioritize your tasks easily.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-sort-amount-up"></i>
+          <h3>Priority Sorting</h3>
+          <p>Sort tasks by priority to stay focused.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-chart-line"></i>
+          <h3>Progress Tracking</h3>
+          <p>Monitor your progress and stay on track.</p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>
+        ProTask Manager is a state-of-the-art task management solution designed
+        to help you stay organized and productive.
+      </p>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2024 ProTask Manager. Powered by Overs.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
